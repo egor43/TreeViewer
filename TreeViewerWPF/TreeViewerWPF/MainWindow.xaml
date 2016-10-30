@@ -14,7 +14,7 @@
         <Menu x:Name="menu" Grid.Row="0">
             <MenuItem Name="OpenFile" Header="Open" Click="OpenFile_Click" />
         </Menu>
-        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" >
+        <ScrollViewer Grid.Row="1" Margin="5" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" >
             <Viewbox>
                 <Grid x:Name="grid" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Viewbox>
