@@ -14,10 +14,10 @@
         <Menu x:Name="menu" Grid.Row="0">
             <MenuItem Name="OpenFile" Header="Open" Click="OpenFile_Click" />
         </Menu>
-        <Viewbox x:Name="viewbox" Grid.Row="1">
-            <Grid x:Name="grid">
-                <Canvas Name="canvas" Width="400" Height="400" />
-            </Grid>
-        </Viewbox>
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" >
+            <Viewbox>
+                <Grid x:Name="grid" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Viewbox>
+        </ScrollViewer>
     </Grid>
 </Window>
