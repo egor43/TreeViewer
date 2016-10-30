@@ -48,6 +48,23 @@ namespace TreeViewerWPF
             FileStream fs = new FileStream(OpenFile.FileName, FileMode.Open);
             Tree = (Node)formatter.Deserialize(fs);
             fs.Close();
+            PrintTree(Tree);
+        }
+
+        public void PrintTree(Node tree)
+        {
+            GeometryGroup group = new GeometryGroup();
+            for (int i = 0; i < 10; i++)
+            {
+                RectangleGeometry rect = new RectangleGeometry();
+                rect.Rect=new Rect(10,20,30,40);
+                System.Windows.Shapes.Path pt = new System.Windows.Shapes.Path();
+                pt.Fill = Brushes.LightBlue;
+                pt.Data = rect;
+                canvas.Children.Add(pt);
+            }
+            
+
         }
     }
 }
