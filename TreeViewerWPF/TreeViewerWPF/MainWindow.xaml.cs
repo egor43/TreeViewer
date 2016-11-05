@@ -44,6 +44,7 @@ namespace TreeViewerWPF
 
         private void OpenFile_Click(object sender, RoutedEventArgs e)
         {
+            grid.Children.Clear();
             OpenFileDialog OpenFile = new OpenFileDialog();
             OpenFile.Filter = "Документ XML(*.xml)| *.xml";
             if (OpenFile.ShowDialog() == DialogResult.HasValue)
